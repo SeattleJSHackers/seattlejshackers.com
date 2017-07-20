@@ -1,37 +1,17 @@
-## Welcome to GitHub Pages
+# Seattle JS Hackers
 
-You can use the [editor on GitHub](https://github.com/SeattleJSHackers/seattlejshackers.com/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+![Seattle JS Hackers](https://i.snag.gy/oLhrv8.jpg)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Welcome!
 
-### Markdown
+**Seattle JS Hackers** is an open and inclusive after-hours community of JavaScript hackers who learn and hack in JavaScript together. We are entrepreneurs, creatives, professionals, tinkerers, computer scientists, educators, marketers, and more -- all working to ignite and amplify our personal productivity and collaboration.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+**How we do it:** We organize hacking sessions at WiFi-ready offices, cafes and bars around Seattle each week. Our hacking sessions encourage peer ideation and review, knowledge sharing, new champions for causes and projects, personal productivity, and a heightened sense of community.
 
-```markdown
-Syntax highlighted code block
+If you want to to learn and hack with together, [come join us](https://www.meetup.com/seattlejshackers)!
 
-# Header 1
-## Header 2
-### Header 3
+## Resources
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/SeattleJSHackers/seattlejshackers.com/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- [Seattle JS Hackers on Meetup.com](https://www.meetup.com/seattlejshackers/)
+- [Resources for JS Hackers](https://github.com/SeattleJSHackers/seattlejshackers/blob/master/README.md)
+- [Slack Group](https://seattlejshackers.slack.com/shared_invite/MTcxMTI1NDM5NjU1LTE0OTI0Nzg3MzktNzA4ZTM5OTQ3Yg)
