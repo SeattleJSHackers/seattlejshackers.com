@@ -14,4 +14,4 @@ If you want to to learn and hack with together, [come join us](https://www.meetu
 
 - [Seattle JS Hackers on Meetup.com](https://www.meetup.com/seattlejshackers/)
 - [Resources for JS Hackers](https://github.com/SeattleJSHackers/seattlejshackers/blob/master/README.md)
-- [Slack Group](https://join.slack.com/t/seattlejshackers/shared_invite/enQtMzYzMDcwNzQ3Nzk0LWJkZjM0YWQ3Y2Y1Njc1N2ViYzUxMzVhZjk0ODAyYTQyNDBkODdjNDQ1ZWJmMzE4MDA5ODZhYjg1NWFhYmQxMjg)
+- [Slack Group](https://join.slack.com/t/seattlejshackers/shared_invite/enQtMzYzMDcwNzQ3Nzk0LTcxZDI5NjA1MjIwYzdkYjQ5ZDhhYjVlNzg1MjljZTg5NjU1YTRlYzhjMjNiZTQ0Y2NkMGRkOTQ2N2Q2N2VjYzU)
