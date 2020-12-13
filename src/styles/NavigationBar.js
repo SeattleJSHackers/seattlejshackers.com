@@ -14,11 +14,12 @@ const NavigationBar = styled.nav`
     min-height: 100vh;
     background-color: ${props => props.theme.colors.background};
     padding: 50px 0;
-    transition: left .5s ease-in-out;
+    transition: all .5s ease-in-out;
     border-right: 2px solid ${props => props.theme.colors.primary};
+    box-shadow: 5px -10px 5px -5px ${props => props.theme.colors.shadow};
 
     &.closed {
-      left: -250px;
+      left: -255px;
     }
 
     .menu-title {
@@ -28,12 +29,14 @@ const NavigationBar = styled.nav`
       padding: 0 5px 0 0;
       margin: 10px;
       font-family: 'Space Mono', monospace;
+      transition: all .5s ease-in-out;
     }
 
     .bar {
       width: 250px;
       height: 2px;
       background-color: ${props => props.theme.colors.primary};
+      transition: all .5s ease-in-out;
     }
   }
 
@@ -45,7 +48,7 @@ const NavigationBar = styled.nav`
     top: 0;
     width: 100vw;
     height: 100vh;
-    background-color: ${props => props.theme.colors.shadow};
+    background-color: ${props => props.theme.colors.background};
     transition: opacity .5s ease-in-out;
     &.show {
       opacity: .5;
@@ -87,14 +90,17 @@ const NavigationBar = styled.nav`
       position: fixed;
       left: 10px;
       top: 15px;
-      text-transform: uppercase;   
-
+      text-transform: uppercase;
+      color: ${props => props.theme.colors.primary};
+      transition: all .5s ease-in-out;
     }
+
     .menu-bg {
       display: none;
     }
 
     .menu {
+      box-shadow: none;
       &.closed{
       left: 0;
       }

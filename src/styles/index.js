@@ -1,3 +1,4 @@
+export { default as AppFrame } from './AppFrame';
 export { default as InsideLink } from './InsideLink';
 export { default as Logo } from './Logo';
 export { default as NavigationBar } from './NavigationBar';
@@ -7,3 +8,4 @@ export { default as ParallaxScreen } from './ParallaxScreen';
 export { default as ScreenFrame } from './ScreenFrame';
 export { default as SymbolLink } from './SymbolLink';
 export { default as TextFrame } from './TextFrame';
+export { default as ThemeButton } from './ThemeButton';

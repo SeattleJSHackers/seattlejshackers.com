@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-const NavigationButton = styled.button`
+const ThemeButton = styled.button`
   z-index: 102;
   position: fixed;
-  left: 10px;
+  right: 10px;
   top: 10px;
   width: 40px;
   height: 40px;
@@ -16,22 +16,18 @@ const NavigationButton = styled.button`
   border-radius: 5px;
   font-size: 35px;
   border: none;
-  transition: all .5s ease-in-out;
 
   .icon {
     transition: all .5s ease-in-out;
   }
 
-  .not-scaled {
-    transform: rotate(90deg) rotateY(90deg);
+  .not-shown {
+    opacity: 0;
   }
 
-  .is-scaled {
-    transform: rotate(0deg) rotateY(0deg);
-  }
-  @media (min-width: 1100px) {
-    display: none;
+  .is-shown {
+    opacity: 1;
   }
 `;
 
-export default NavigationButton;
+export default ThemeButton;

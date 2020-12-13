@@ -4,7 +4,8 @@ const Logo = styled.div`
   font-family: 'Space Mono', monospace;
   margin: 0 auto;
   box-shadow: 0 10px 10px -5px ${props => props.theme.colors.shadow + '95'};
-
+  transition: all .5s ease-in-out;
+  
   @media (max-width: 500px) {
     padding: 5px;
     border-radius: 10%;

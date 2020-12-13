@@ -14,8 +14,6 @@ const InsideLink = styled(NavLink)`
   transition: all .5s ease-in-out;
 
   .icon-frame {
-    /* background-color: #F0DB4F;
-    color: #323330; */
     width: 30px;
     height: 30px;
     display: flex;

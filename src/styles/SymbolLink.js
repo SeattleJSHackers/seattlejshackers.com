@@ -10,7 +10,7 @@ const SymbolLink = styled.a`
   color: ${props => props.theme.colors.secondary};
   border-radius: 5px;
   margin: 10px;
-  /* font-family: 'Space Mono', monospace; */
+  transition: all .5s ease-in-out;
   width: 60px;
   height: 60px;
   box-shadow: 0 10px 10px -5px ${props => props.theme.colors.shadow + '95'};

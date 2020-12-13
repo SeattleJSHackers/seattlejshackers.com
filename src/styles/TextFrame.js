@@ -22,6 +22,15 @@ const TextFrame = styled.div`
     margin: 10px 0;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
+    a {
+      color: ${props => props.theme.colors.primary + '99'};
+    }
+  }
+
+  img {
+    width: 100%;
+    filter: grayscale(100%);
+    max-width: 800px;
   }
 `;
 

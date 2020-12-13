@@ -9,6 +9,7 @@ import ExternalLink from './ExternalLink';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isButtonOpen, setIsButtonOpen] = useState(false);
   const [isScaled, setIsScaled] = useState(true);
   const [isFaded, setIsFaded] = useState(false);
   const history = useHistory();
@@ -16,44 +17,48 @@ const Navigation = () => {
   useEffect(() => {
     window.addEventListener('resize', handleClose);
 
-    return () => window.removeEventListener('resize', handleClose)
+    return () => window.removeEventListener('resize', handleClose);
   });
 
   const handleMenuToggle = () => {
     setIsScaled(false);
+    setIsOpen(prevState => {
+      if (!prevState) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = 'scroll';
+      }
+
+      return !prevState;
+    });
 
     setTimeout(() => {
-      setIsOpen(prevState => {
-        if (!prevState) {
-          document.body.style.overflow = 'hidden';
-        } else {
-          document.body.style.overflow = 'scroll';
-        }
-
-        return !prevState;
-      });
+      setIsButtonOpen(prevState => !prevState);
 
       setTimeout(() => setIsScaled(true), 100);
     }, 500);
   }
 
   const handleClose = () => {
-    console.log(isOpen)
     if (isOpen === true) {
       setIsScaled(false);
+      setIsOpen(false);
+      document.body.style.overflow = 'scroll';
+
       setTimeout(() => {
-        document.body.style.overflow = 'scroll';
-        setIsOpen(false);
+        setIsButtonOpen(false);
         setTimeout(() => setIsScaled(true), 100);
       }, 500)
     }
   }
+
   const handleNavigation = (location) => (event) => {
     event.preventDefault();
 
     handleClose();
     setIsFaded(true);
     setTimeout(() => {
+      window.scrollTo(0, 0);
       history.push(location);
       setTimeout(() => {
         setIsFaded(false);
@@ -65,7 +70,7 @@ const Navigation = () => {
   return (
     <NavigationBar>
       <NavigationButton onClick={handleMenuToggle} disabled={!isScaled}>
-        <FontAwesomeIcon icon={isOpen ? faTimes : faBars} className={`icon ${isScaled ? 'is-scaled' : 'not-scaled'}`} alt={isOpen ? 'close menu' : 'open menu'} />
+        <FontAwesomeIcon icon={isButtonOpen ? faTimes : faBars} className={`icon ${isScaled ? 'is-scaled' : 'not-scaled'}`} alt={isOpen ? 'close menu' : 'open menu'} />
       </NavigationButton>
       <div className='sjsh-icon'>
         Seattle{`{JS}`}Hackers

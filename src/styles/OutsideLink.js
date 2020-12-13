@@ -11,6 +11,7 @@ const OutsideLink = styled.a`
   padding: 0 5px 0 0;
   margin: 10px;
   font-family: 'Space Mono', monospace;
+  transition: all .5s ease-in-out;
 
   .icon-frame {
     width: 30px;
