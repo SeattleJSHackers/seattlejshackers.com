@@ -15,6 +15,9 @@ const Events = () => {
           </TextFrame>
         );
       })}
+      <TextFrame>
+        <p>Find out more about our upcoming events on <a href='https://www.meetup.com/seattlejshackers/events/' target='_blank' rel='noreferrer'>Meetup.com</a>.</p>
+      </TextFrame>
     </ScreenFrame >
   );
 };

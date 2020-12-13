@@ -1,7 +1,7 @@
 const events = [
   {
     title: 'Lean Coffee',
-    reoccurrence: 'Every 2nd Sunday of the Month',
+    reoccurrence: 'every 2nd Sunday of the Month',
     img: 'https://secure.meetupstatic.com/photos/event/6/4/2/c/highres_492625644.jpeg',
     description: (
       <>
@@ -12,7 +12,7 @@ const events = [
   },
   {
     title: 'Code Katas',
-    reoccurrence: 'Every 3rd Tuesday of the Month',
+    reoccurrence: 'every 3rd Tuesday of the Month',
     img: 'https://secure.meetupstatic.com/photos/event/5/1/0/5/highres_491540741.jpeg',
     description: (
       <>
