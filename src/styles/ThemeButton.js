@@ -16,9 +16,10 @@ const ThemeButton = styled.button`
   border-radius: 5px;
   font-size: 35px;
   border: none;
+  transition: all .5s ease-in-out;
 
   .icon {
-    transition: all .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
   }
 
   .not-shown {

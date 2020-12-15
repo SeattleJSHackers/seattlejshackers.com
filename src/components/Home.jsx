@@ -2,21 +2,20 @@ import React, { useState, useEffect } from 'react';
 import { ScreenFrame, TextFrame, ParallaxScreen } from '../styles';
 import ResponsiveLogo from './ResponsiveLogo';
 import { Background } from 'react-parallax';
-import bg1 from '../assets/bg1.jpg';
-import bg2 from '../assets/bg2.jpeg';
-import bg3 from '../assets/bg3.jpeg';
+import { background1, background2, background3 } from '../assets/backgrounds';
+
 import IconLink from './IconLink';
-import { faSlack, faMeetup, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faSlack, faMeetup, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 const Home = () => {
   const [isFaded, setIsFaded] = useState(false);
   const [bgIndex, setBgIndex] = useState(0);
-  const bgs = [bg1, bg2, bg3];
+  const backgrounds = [background1, background2, background3];
 
   const changePicture = () => {
     setIsFaded(true);
     setTimeout(() => {
-      setBgIndex(prevState => prevState + 1 === bgs.length ? 0 : prevState + 1);
+      setBgIndex(prevState => prevState + 1 === backgrounds.length ? 0 : prevState + 1);
       setTimeout(() => {
         setIsFaded(false);
 
@@ -56,10 +55,16 @@ const Home = () => {
             icon={faTwitter}
             text='twitter'
           />
+          <IconLink
+            href='https://www.youtube.com/channel/UC0xOiHI3zANH7WLp5Ucru8Q'
+            alt='Seattle JS Hackers youtube page (opens to new page)'
+            icon={faYoutube}
+            text='youtube'
+          />
         </div>
         <Background className='img-bg'>
           <div className='bg-filter' />
-          <img src={bgs[bgIndex]} alt='' className={`bg-img${isFaded ? ' faded' : ''}`} />
+          <img src={backgrounds[bgIndex]} alt='' className={`bg-img${isFaded ? ' faded' : ''}`} />
         </Background>
       </ParallaxScreen>
       <ScreenFrame className='fit'>

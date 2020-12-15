@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import { NavigationBar, NavigationButton } from '../styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes, faBars, faHome, faBook, faCalendar, faFile } from '@fortawesome/free-solid-svg-icons';
-import { faSlack, faMeetup, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faSlack, faMeetup, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import InternalLink from './InternalLink';
 import ExternalLink from './ExternalLink';
 
@@ -90,13 +90,13 @@ const Navigation = () => {
           icon={faCalendar}
           text='events'
         />
-        <InternalLink
+        {/* <InternalLink
           to='/resources'
           handleMenuToggle={handleNavigation}
           alt=''
           icon={faBook}
           text='Resources'
-        />
+        /> */}
         <InternalLink
           to='/code-of-conduct'
           handleMenuToggle={handleNavigation}
@@ -124,6 +124,13 @@ const Navigation = () => {
           icon={faTwitter}
           text='twitter'
         />
+        <ExternalLink
+          href='https://www.youtube.com/channel/UC0xOiHI3zANH7WLp5Ucru8Q'
+          alt='Seattle JS Hackers youtube page (opens to new page)'
+          icon={faYoutube}
+          text='youtube'
+        />
+
       </div>
       <div className={`nav-bg ${isFaded ? 'fade' : 'unfade'}`} />
       <div className={`menu-bg ${isOpen ? 'show' : 'hide'}`} onClick={handleMenuToggle} />

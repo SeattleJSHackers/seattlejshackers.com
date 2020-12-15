@@ -5,7 +5,11 @@ const Logo = styled.div`
   margin: 0 auto;
   box-shadow: 0 10px 10px -5px ${props => props.theme.colors.shadow + '95'};
   transition: all .5s ease-in-out;
-  
+
+  .seattle, .js, .hackers, span {
+    transition: all .5s ease-in-out;
+  }
+
   @media (max-width: 500px) {
     padding: 5px;
     border-radius: 10%;
@@ -92,6 +96,7 @@ const Logo = styled.div`
     align-items: center;
     font-weight: 400;
     width: fit-content;
+    
     .seattle, .hackers {
       color: ${props => props.theme.colors.secondary};
       font-size: 62px;

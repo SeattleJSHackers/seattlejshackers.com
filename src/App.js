@@ -45,7 +45,7 @@ function App() {
         localStorage.setItem('isDarkMode', !prevState);
         return !prevState;
       })
-      setIsButtonShown(true);
+      setTimeout(() => setIsButtonShown(true), 100);
     }, 500)
 
   }
