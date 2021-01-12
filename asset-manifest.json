@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b6880f04.chunk.css",
+    "main.js": "/static/js/main.612e41c9.chunk.js",
+    "main.js.map": "/static/js/main.612e41c9.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.20c2254c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.20c2254c.js.map",
+    "static/js/2.21f8bd86.chunk.js": "/static/js/2.21f8bd86.chunk.js",
+    "static/js/2.21f8bd86.chunk.js.map": "/static/js/2.21f8bd86.chunk.js.map",
+    "static/js/3.daeb6e85.chunk.js": "/static/js/3.daeb6e85.chunk.js",
+    "static/js/3.daeb6e85.chunk.js.map": "/static/js/3.daeb6e85.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.b6880f04.chunk.css.map": "/static/css/main.b6880f04.chunk.css.map",
+    "static/js/2.21f8bd86.chunk.js.LICENSE.txt": "/static/js/2.21f8bd86.chunk.js.LICENSE.txt",
+    "static/media/CodeKatasImage.112ba5bd.jpg": "/static/media/CodeKatasImage.112ba5bd.jpg",
+    "static/media/VirtualCoffeeImage.02b826c7.jpg": "/static/media/VirtualCoffeeImage.02b826c7.jpg",
+    "static/media/background1.a3b978d8.jpg": "/static/media/background1.a3b978d8.jpg",
+    "static/media/background2.57e14bf9.jpeg": "/static/media/background2.57e14bf9.jpeg",
+    "static/media/background3.0e94f6a6.jpeg": "/static/media/background3.0e94f6a6.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.20c2254c.js",
+    "static/js/2.21f8bd86.chunk.js",
+    "static/css/main.b6880f04.chunk.css",
+    "static/js/main.612e41c9.chunk.js"
+  ]
+}
