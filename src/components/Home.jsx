@@ -14,15 +14,15 @@ const Home = () => {
 
   const changePicture = () => {
     setIsFaded(true);
+
     setTimeout(() => {
       setBgIndex(prevState => prevState + 1 === backgrounds.length ? 0 : prevState + 1);
+
       setTimeout(() => {
         setIsFaded(false);
-
       }, 250);
     }, 1000)
   };
-
 
   useEffect(() => {
     const homeInterval = setInterval(() => {
@@ -30,7 +30,6 @@ const Home = () => {
     }, 7500);
     return () => clearInterval(homeInterval);
   });
-
 
   return (
     <>
@@ -78,7 +77,5 @@ const Home = () => {
     </>
   );
 };
-
-
 
 export default Home;

@@ -12,8 +12,6 @@ const TextFrame = styled.div`
 
   h3, h4 {
     margin: 10px 0;
-    font-family: 'Space Mono', monospace;
-    text-transform: uppercase;
     line-height: 1;
 
     .warning-icon {
@@ -22,21 +20,24 @@ const TextFrame = styled.div`
   }
 
   h3 {
+    font-family: 'Space Mono', monospace;
+    text-transform: uppercase;
     font-size: 35px;
   }
   
   h4 {
-    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
   }
 
   p {
     margin: 10px 0;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
+  }
 
-    a {
-      color: ${props => props.theme.colors.primary + '99'};
-    }
+  a {
+    color: ${props => props.theme.colors.primary + '99'};
   }
 
   img {

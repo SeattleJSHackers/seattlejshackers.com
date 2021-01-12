@@ -22,7 +22,7 @@ const pastEvents = [
       </>
     ),
     presenter: 'Sean Nakamura',
-    presenterLink: null,
+    presenterLink: 'https://www.linkedin.com/in/seannakamura/',
   },
   {
     title: 'Real-time updates with Websockets and Server-Sent Events',
@@ -43,7 +43,7 @@ const pastEvents = [
       </>
     ),
     presenter: 'Jon Borgonia',
-    presenterLink: null,
+    presenterLink: 'https://theremix.github.io/',
   },
 ]
 

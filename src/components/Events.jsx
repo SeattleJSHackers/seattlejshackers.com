@@ -27,17 +27,13 @@ const Events = () => {
       </TextFrame>
       {pastEvents.map((pastEvent, idx) => {
         return (
-          <TextFrame>
+          <TextFrame key={`past-event-${idx}`}>
             <ReactPlayer
               className='video-player'
-              // title={pastEvent.title}
               width='800px'
               height='450px'
               url={pastEvent.video}
               controls={true}
-            // frameborder="0"
-            // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            // allowFullScreen={true}
             />
             <h4>{pastEvent.title}</h4>
             <h4>by {pastEvent.presenterLink ? (
